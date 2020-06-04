@@ -14,7 +14,7 @@ class FirstMiddleware implements Middleware
 {
     public function __invoke(Closure $next, Request $request)
     {
-        var_dump("First middleware");
+        dump("First middleware");
 
         if ($request->ajax()) {
             // not authorized

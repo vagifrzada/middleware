@@ -2,8 +2,8 @@
 
 namespace App\Core\Middleware;
 
-use App\Http\Request;
 use Closure;
+use App\Http\Request;
 
 /**
  * Class MiddlewareStack
@@ -16,12 +16,12 @@ class MiddlewareStack
     public function __construct()
     {
         $this->start = function (Request $request) {
-            var_dump("Initial (last) middleware !");
+            dump("Initial (last) middleware !");
             return $request;
         };
     }
 
-    public function push(Middleware $middleware)
+    public function push(Middleware $middleware): void
     {
         $next = $this->start;
 

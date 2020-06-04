@@ -28,6 +28,6 @@ class App
     {
         $request = $this->middlewareStack->process(new Request());
 
-        var_dump('App is running ...', ['status' => $request->code]);
+        dd('App is running ...', ['status' => $request->code]);
     }
 }

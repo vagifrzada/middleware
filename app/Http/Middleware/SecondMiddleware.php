@@ -14,7 +14,7 @@ class SecondMiddleware implements Middleware
 {
     public function __invoke(Closure $next, Request $request)
     {
-        var_dump("Second middleware");
+        dump("Second middleware");
 
         return $next($request);
     }

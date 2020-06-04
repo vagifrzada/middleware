@@ -1,7 +1,8 @@
 {
   "description": "Simple php middleware example",
   "require": {
-    "php": "^7.4.0"
+    "php": "^7.4.0",
+    "tightenco/collect": "^7.12"
   },
   "autoload": {
     "psr-4": {
